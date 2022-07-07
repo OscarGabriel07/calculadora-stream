@@ -5,6 +5,7 @@ public class Calculator {
 
     public Integer add(List<Integer> numbers){
         Integer resultado = numbers.stream()
+                .sorted((x, y) -> x.compareTo(y))
                 .reduce((acumulator, number) -> {
                     return acumulator + number;
                 }).get();
@@ -13,14 +14,16 @@ public class Calculator {
 
     public Integer substract(List<Integer> numbers){
         Integer resultado = numbers.stream()
-                        .reduce((acumulator, number) -> {
-                            return acumulator - number;
-                        }).get();
+                .sorted((x, y) -> y.compareTo(x))
+                .reduce((acumulator, number) -> {
+                    return acumulator - number;
+                }).get();
         return resultado;
     }
 
     public Integer multiply(List<Integer> numbers){
         Integer resultado = numbers.stream()
+                .sorted((x, y) -> x.compareTo(y))
                 .reduce((acumulador, number) -> {
                     return acumulador * number;
                 }).get();
@@ -29,6 +32,7 @@ public class Calculator {
 
     public Integer split(List<Integer> numbers){
         Integer resultado = numbers.stream()
+                .sorted((x, y) -> y.compareTo(x))
                 .reduce((acumulador, number) -> {
                     return acumulador / number;
                 }).get();
