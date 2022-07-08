@@ -35,7 +35,7 @@ public class Calculator {
      *
      * @param list1 primera lista de tipo Double
      * @param list2 segunda lista de tipo Double
-     * @return devuelve una nueva lista con los valores de cada item sumados
+     * @return devuelve una nueva lista con los valores de cada item restados
      */
     public List<Double> substract(List<Double> list1, List<Double> list2){
         if(list1.size() != list2.size()){return List.of();}
@@ -54,7 +54,7 @@ public class Calculator {
      *
      * @param list1 primera lista de tipo Double
      * @param list2 segunda lista de tipo Double
-     * @return devuelve una nueva lista con los valores de cada item sumados
+     * @return devuelve una nueva lista con los valores de cada item multiplicados
      */
     public List<Double> multiply(List<Double> list1, List<Double> list2){
         if(list1.size() != list2.size()){return List.of();}
@@ -73,7 +73,7 @@ public class Calculator {
      *
      * @param list1 primera lista de tipo Double
      * @param list2 segunda lista de tipo Double
-     * @return devuelve una nueva lista con los valores de cada item sumados
+     * @return devuelve una nueva lista con los valores de cada item divididos
      */
     public List<Double> split(List<Double> list1, List<Double> list2){
         if(list1.size() != list2.size()){return List.of();}
@@ -95,7 +95,7 @@ public class Calculator {
      *
      * @param list1 primera lista de tipo Double
      * @param list2 segunda lista de tipo Double
-     * @return devuelve una nueva lista con los valores de cada item sumados
+     * @return devuelve una nueva lista con los valores de cada item con el cálculo del módulo
      */
     public List<Double> modul(List<Double> list1, List<Double> list2){
         if(list1.size() != list2.size()){return List.of();}
